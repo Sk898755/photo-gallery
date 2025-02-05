@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photo Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf6ea;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border: 3px solid #1aa7da;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 1080px) {
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://www.thespruce.com/thmb/obGboGOFSmEi8KcdRifrdW9JtgY=/3410x0/filters:no_upscale():max_bytes(150000):strip_icc()/hardy-hibiscus-plants-2132719-06-5839900cbcf04d2ea02e1d9b73ba6545.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src=https://www.bing.com/th?id=OIP.Ekodt74sE9k22Kcb1D_9XwHaFj&w=153&h=106&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.bing.com/th?id=OIP.wg4R0mAD1_DQAII9hCM-8AHaDk&w=187&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.bing.com/th?id=OIP.rFQ0FQRYju3WUf-Gfx75SQHaEK&w=160&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th/id/OIP.BLuF1XG7msaXxtGlG2fAuAHaFj?w=219&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th/id/OIP.0ZM7e1Z_zmebcBILunvbHQHaEn?w=262&h=183&c=7&r=0&o=5&pid=1.7" alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th/id/OIP.KPJfao48vtOOzUIxXW5C4wHaFA?w=219&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th/id/OIP.RCYtryHCKNKcWfIJ-eu_8gAAAA?w=257&h=184&c=7&r=0&o=5&pid=1.7" alt="Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th/id/OIP.vNw_hcxUnxGNxCk00eO6rQHaE8?w=231&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th?id=OIP.1cR6WrAblUY_ACu3i9U5IQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th?id=OIP.m88ha6ZtdV0BMH3W5i5YtAHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th?id=OIP.6dzqZFJmAcaXVeZrJK7mBQHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th?id=OIP.jHvTOSF7924Ah63W7mozxQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Image 9">
+        </div>
+    </div>
+
+</body>
+</html>
